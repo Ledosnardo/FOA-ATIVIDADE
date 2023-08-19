@@ -1,0 +1,19 @@
+@import './header.css';
+@import './game-apresentation.css';
+
+:root{
+    --color-primary: #639dcb;
+    --color-background: linear-gradient(21deg, rgba(121,175,217,1) 0%, rgba(66,140,198,1) 41%, rgba(33,113,175,1) 100%);;
+    --color-white: #ece3dd;
+    --color-black: #000
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--color-primary);
+}
+
+.sections{
+    padding-top: 15vh;
+}
