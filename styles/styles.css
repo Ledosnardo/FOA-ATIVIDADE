@@ -2,10 +2,10 @@
 @import './game-apresentation.css';
 
 :root{
-    --color-primary: #639dcb;
-    --color-background: linear-gradient(21deg, rgba(121,175,217,1) 0%, rgba(66,140,198,1) 41%, rgba(33,113,175,1) 100%);;
+    --color-primary: #282961;
+    --color-background: linear-gradient(21deg, rgba(128,130,232,1) 0%, rgba(70,71,128,1) 41%, rgba(40,41,97,1) 100%);
     --color-white: #ece3dd;
-    --color-black: #000
+    --color-black: #000;
 }
 
 body{
