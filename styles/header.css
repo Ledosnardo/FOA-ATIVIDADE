@@ -1,23 +1,58 @@
 @import './styles.css';
 
 .header{
-    /* position: fixed; */
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
     width: 100%;
     height: 15vh;
-    /* background: var(--color-background); */
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.header::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.01);
+    left: 0;
 
-.header ul{
+}
+.header__blur{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    
+}
+.header > .header__blur ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
     width: 60%;
     display: flex;
     justify-content: space-around;
     list-style-type: none;
 }
-
-.header a{
+.header > .header__blur > ul li{    
+    outline-offset: -20px;
+    outline: 1px solid rgba(255, 255, 255, 0);
+    transition: 0.4s outline-offset 0.1s, 0.5s outline-color;
+}
+.header > .header__blur > ul li:hover{
+    outline-offset: 20px;
+    outline-color: rgba(255, 255, 255, 0.3);
+    transition: 0.4s outline-offset 0.1s, 0.3s outline-color 0.1s;
+}
+.header > .header__blur a{
+    padding: 15px;
     text-decoration: none;
     color: var(--color-white);
     text-transform: uppercase;
@@ -26,8 +61,9 @@
     font-size: .8rem;
 }
 
-.header a:hover{
+.header > .header__blur a:hover{
     opacity: 0.5;
+
 }
 
 @media (max-width: 425px){

@@ -1,11 +1,12 @@
 @import './styles.css';
 
 .game-presentation{
-    width: 100%;
+    width: fit-content;
     height: 45vh;
     display: flex;
     justify-content: center;
     align-items: start;
+    margin-left: 20px;
     gap: 64px;
     color: var(--color-white);
 }
@@ -16,9 +17,15 @@
 }
 
 .game-presentation h2{
-    color: var(--color-white);
-}
-
+    color: var(--color-black);
+    font-weight:900;
+    background-color: var(--color-white);
+    width: fit-content;
+    padding: 5px 20px 5px 20px;
+    border-bottom: 5px solid var(--color-black);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}   
 .game-presentation div {
     margin-top: -2rem;
     padding-left: 3.2rem;
