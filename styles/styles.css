@@ -2,16 +2,23 @@
 @import './game-apresentation.css';
 
 :root{
-    --color-primary: #388eff;
+    --color-primary: #e85759;
     --color-background: linear-gradient(47deg, rgba(83,144,239,1) 0%, rgba(28,84,173,1) 41%, rgba(2,68,172,1) 100%);
     --color-white: #ece3dd;
     --color-black: #000;
 }
 
+.flex {
+    display: flex;
+}
+
 body{
     margin: 0;
     padding: 0;
-    background: var(--color-primary);
+    background: url("../images/background.jpg") no-repeat fixed center;
+    background-size: cover;
+
+    font-family: "Outfit";
 }
 
 .sections{
@@ -19,17 +26,35 @@ body{
 }
 
 .about-game{
-    background-color: green;
-    height: 73vh;
+    background-color: var(--color-white);
+    height: 50vh;
+    padding: 2rem;
+
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
+.about-game div {
+    margin-left: 4rem;
+}
+
+.about-game div p {
+    width: 95%;
+    text-align: left;
+    font-size: large;
 }
 
 .game-video{
-    background-color: red;
-    height: 73vh;
+    height: 90vh;
 }
 
 @media (max-width: 425px){
     .sections{
         padding-top: 12vh;
+    }
+
+    .about-game div p{
+        font-size: .2rem;
     }
 }
