@@ -1,13 +1,13 @@
 @import './styles.css';
 
 .game-presentation{
-    background: url("../images/banner 2.jpg") no-repeat center;
-    background-size: cover;
     width: 100%;
-    height: 83vh;
+    height: 45vh;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
+    gap: 64px;
+    color: var(--color-white);
 }
 
 .game-presentation img{
@@ -16,8 +16,23 @@
 }
 
 .game-presentation h2{
-    color: var(--color-black);
-    width: 30%;
+    color: var(--color-white);
+}
+
+.game-presentation div {
+    margin-top: -2rem;
+    padding-left: 3.2rem;
+    font-size: larger;
+}
+
+.game-presentation div p {
+    width: 40%;
+}
+
+@media(max-width:768px){
+    .game-presentation div {
+        font-size: small;
+    }
 }
 
 @media (max-width: 425px){
