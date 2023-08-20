@@ -36,9 +36,22 @@
     width: 40%;
 }
 
-@media(max-width:768px){
-    .game-presentation div {
+@media(max-width:1024px){
+    .game-presentation {
         font-size: small;
+    }
+}
+
+@media(max-width:768px){
+
+    .game-presentation div {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .game-presentation div p{
+        width: 40%;
+        text-align: center;
     }
 }
 
@@ -52,5 +65,10 @@
     .game-presentation img{
         width: 100px;
         height: 100px;
+    }
+
+    .game-presentation div p{
+        width: 80%;
+        text-align: center;
     }
 }
