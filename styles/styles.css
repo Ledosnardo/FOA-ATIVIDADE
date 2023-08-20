@@ -2,8 +2,8 @@
 @import './game-apresentation.css';
 
 :root{
-    --color-primary: #282961;
-    --color-background: linear-gradient(21deg, rgba(128,130,232,1) 0%, rgba(70,71,128,1) 41%, rgba(40,41,97,1) 100%);
+    --color-primary: #388eff;
+    --color-background: linear-gradient(47deg, rgba(83,144,239,1) 0%, rgba(28,84,173,1) 41%, rgba(2,68,172,1) 100%);
     --color-white: #ece3dd;
     --color-black: #000;
 }
@@ -16,4 +16,20 @@ body{
 
 .sections{
     padding-top: 15vh;
+}
+
+.about-game{
+    background-color: green;
+    height: 73vh;
+}
+
+.game-video{
+    background-color: red;
+    height: 73vh;
+}
+
+@media (max-width: 425px){
+    .sections{
+        padding-top: 12vh;
+    }
 }

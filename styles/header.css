@@ -30,3 +30,26 @@
 .header a:hover{
     color: var(--color-black);
 }
+
+@media (max-width: 425px){
+    .header{ 
+        border-bottom: 2px solid var(--color-primary);
+        height: 12vh;
+    }
+
+    .header ul{
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .header a{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 375px){
+    .header a{
+        letter-spacing: 1px;
+    }
+}
