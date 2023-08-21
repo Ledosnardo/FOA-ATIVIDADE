@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-size:  cover;
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@
     transition: 0.4s outline-offset 0.1s, 0.5s outline-color;
 }
 .header > .header__blur > ul li:hover{
-    outline-offset: 20px;
+    outline-offset: 10px;
     outline-color: rgba(255, 255, 255, 0.3);
     transition: 0.4s outline-offset 0.1s, 0.3s outline-color 0.1s;
 }
