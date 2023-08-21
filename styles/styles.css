@@ -82,6 +82,11 @@ body{
     border-radius: 5px;
 }
 
+.game-video a {
+    text-decoration: none;
+    color: #000;
+}
+
 @media(max-width: 1024px) {
     .about-game div{
         height: 200px;
@@ -89,6 +94,14 @@ body{
 
     .about-game div p {
         font-size: .9rem;
+    }
+
+    .game-video {
+        padding: 3.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -115,5 +128,10 @@ body{
 
     .about-game div p{
         font-size: .8rem;
+    }
+
+    #video iframe {
+        width: 300px;
+        height: 200px;
     }
 }
