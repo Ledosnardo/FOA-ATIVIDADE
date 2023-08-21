@@ -111,9 +111,13 @@ body{
         padding: 5rem;
         flex-direction: column;
     }
+
 }
 
 @media (max-width: 425px){
+    .sections {
+        padding-top: 5vh;
+    }
     .sections{
         padding-top: 12vh;
     }
