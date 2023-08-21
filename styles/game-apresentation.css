@@ -39,9 +39,10 @@
 
 @media (max-width: 425px){
     .game-presentation{
-        height: 50vh;
+        height: 40vh;
         align-items: center;
         justify-content: center;
+        padding-block-end: 3rem;
     }
 
     .game-presentation img{
