@@ -121,9 +121,10 @@ body{
     .about-game {
         padding-block: 8rem;
     }
-
+    
     .about-game div {
         height: 170px;
+        width: 300px;
     }
 
     .about-game div p{
@@ -133,5 +134,11 @@ body{
     #video iframe {
         width: 300px;
         height: 200px;
+    }
+}
+
+@media (max-width: 375px){
+    .game-video h1{
+        font-size: large;
     }
 }
