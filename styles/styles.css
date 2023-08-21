@@ -103,20 +103,37 @@ body{
         align-items: center;
         justify-content: center;
     }
+    .game-presentation div{
+        padding: 0;
+    }
 }
-
+@media (max-width: 1024px) {
+    .game-presentation div{
+        padding-left: 3rem;
+    }
+}
 @media(max-width: 768px){
+    body{
+        background-position: -100px 0;
+        backdrop-filter: blur(2.2px);
+    }
+    .game-presentation div{
+        padding-left: 0;
+    }
     .about-game {
         height: 100vh;
         padding: 5rem;
         flex-direction: column;
     }
-
+    .game-video h1{
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 425px){
-    .sections {
-        padding-top: 5vh;
+    body{
+        background-position: -600px -40px;
+        backdrop-filter: blur(1.2px);
     }
     .sections{
         padding-top: 12vh;
@@ -134,15 +151,42 @@ body{
     .about-game div p{
         font-size: .8rem;
     }
-
+    .game-video h1{
+        width: 80%;
+        font-size: 1rem;
+        text-align: center;
+    }
     #video iframe {
         width: 300px;
         height: 200px;
     }
 }
 
-@media (max-width: 393px){
+@media (max-width: 375px){
+    body{
+        background-position: -670px -50px;
+        backdrop-filter: blur(1.2px);
+    }
+    .sections{
+        justify-content: center;
+        align-items: center;
+    }
+    .game-presentation div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-col{
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .title {
+        justify-content: center;
+    }
     .game-video h1{
+        width: 90%;
         font-size: large;
     }
 }
