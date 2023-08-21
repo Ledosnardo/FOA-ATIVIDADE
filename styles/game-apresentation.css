@@ -6,7 +6,6 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    margin-left: 20px;
     gap: 64px;
     color: var(--color-white);
 }
@@ -63,8 +62,9 @@
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 405px){
     .game-presentation h2{
         font-size: larger;
+        margin-left: 10px;
     }
 }
