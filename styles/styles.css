@@ -18,6 +18,17 @@
     flex-direction: column;
 }
 
+.title {
+    color: var(--color-black);
+    font-weight:900;
+    background-color: var(--color-white);
+    width: fit-content;
+    padding: 5px 20px 5px 20px;
+    border-bottom: 5px solid var(--color-black);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -37,6 +48,8 @@ body{
     align-items: center;
     justify-content: center;
     gap: 2rem;
+
+    padding-inline: 4rem;
 }
 
 .about-game div {
@@ -58,6 +71,15 @@ body{
     background: url("../images/video-bg.jpg") center center fixed no-repeat;
     background-size: cover;
     height: 60vh;
+
+    padding-inline: 4rem;
+}
+
+#video iframe {
+    height: 300px;
+    width: 500px;
+
+    border-radius: 5px;
 }
 
 @media(max-width: 1024px) {
