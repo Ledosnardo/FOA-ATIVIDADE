@@ -89,8 +89,4 @@
         letter-spacing: 1px;
     }
 }
-@media (max-width: 375px) {
-    .header{
-        padding-left: 10px;
-    }
-}
+
