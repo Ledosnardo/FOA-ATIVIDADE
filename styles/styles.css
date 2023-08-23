@@ -7,9 +7,24 @@
     --color-white: #ece3dd;
     --color-black: #000;
     --color-blackless: #00000098;
-    --color-whiteless: #b8bcbe;
+    --color-whiteless: #dadcdd;
+    --color-header: #ffffff;
 }
-
+::-webkit-scrollbar-thumb:hover{
+    border-radius: 0;
+}
+::-webkit-scrollbar-thumb{
+    transition: 1s all ;
+    background-color: var(--color-blackless);
+    border-radius: 10px;
+}
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: var(--color-white);
+}
+html{
+    overflow-x: hidden;
+}
 .flex {
     display: flex;
 }
@@ -25,64 +40,115 @@
     width: fit-content;
     padding: 5px 20px 5px 20px;
     border-bottom: 5px solid var(--color-black);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 body{
     margin: 0;
     padding: 0;
-    background: url("../images/background.jpg") no-repeat fixed center;
-    background-size: cover;
+    background: url("/images/PC-Building-Simulator-2-fotor-20230823123817.jpg") no-repeat fixed center;
+    background-size:cover;
     font-family: "Outfit";
 }
 
 .sections{
     padding-top: 15vh;
 }
-
-.about-game{
-    background-color: var(--color-white);
-    height: 50vh;
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-
-    padding-inline: 4rem;
+h3{
+    font-size: 2rem;
+    margin-bottom: -50px;
+    text-align: center;
 }
-
-.about-game div {
+.h3-subtitle{
+    color: var(--color-white);
+    background-image: linear-gradient(
+        50deg,
+        hsl(240deg 75% 2%) 0%,
+        hsl(235deg 78% 6%) 33%,
+        hsl(241deg 81% 11%) 67%,
+        hsl(258deg 84% 17%) 100%
+    );    
+    padding: 5px 15px;
+}
+.about-game{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    padding: 10dvh;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    padding-inline: 4rem;
+    height: fit-content;
+}
+.about-game-cards{
+    width: 70%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;  
+    gap: 7%;
+    padding-bottom: 5dvh;
+}
+.about-game div:nth-child(2),
+.about-game div:nth-child(4){
+    flex-direction: row-reverse;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.card1-image,
+.card2-image,
+.card3-image{
+    width: 48%;
+    border-radius: 20px;
+    border: 3px solid var(--color-whiteless);
+    box-shadow: 14px 14px 14px 2px rgba(0,0,0,0.55);  
+}
+.about-game .card {
     border: 2px solid var(--color-whiteless);
     border-radius: 10px;
-    padding: 15px;
+    padding: 0px 15px 15px 15px;
     box-shadow: 14px 14px 14px 2px rgba(0,0,0,0.55);   
-
+    background-color: rgb(255, 245, 238);
+}
+.about-game div h2{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.5rem;
 }
 .about-game div p {
-    width: 95%;
     color: var(--color-blackless);
     text-align: left;
-    font-size: large;
+    font-size: 1.3rem;
+    text-align: justify;
 }
 
 .game-video{
-    padding-top: 15vh;
-    background: url("../images/video-bg.jpg") center center fixed no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 8dvh;
+    background: url("/images/pcbs11-2.webp") no-repeat fixed center;
     background-size: cover;
-    height: 60vh;
-
+    background-position: 0 150px;
+    height: 60dvh;
     padding-inline: 4rem;
+}
+.game-video h1{
+    font-size: 2rem;
 }
 
 #video iframe {
     height: 300px;
     width: 500px;
-
     border-radius: 5px;
 }
 
-.game-video a {
+.game-video a{
     text-decoration: none;
     color: #000;
 }
@@ -106,50 +172,69 @@ body{
     .game-presentation div{
         padding: 0;
     }
-}
-@media (max-width: 1024px) {
+
     .game-presentation div{
         padding-left: 3rem;
     }
 }
+
 @media(max-width: 768px){
     body{
-        background-position: -100px 0;
+        background-position: -600px;
         backdrop-filter: blur(2.2px);
+    }
+    h3{
+        margin-bottom: 20px;
+        text-align: center;
+        width: 25ch;
+        line-height: 1.5em;
     }
     .game-presentation div{
         padding-left: 0;
     }
     .about-game {
-        height: 100vh;
+        height: fit-content;
         padding: 5rem;
         flex-direction: column;
+        gap: 50px;
+        padding: 20px 0 100px 0;
+    }
+    .about-game-cards{
+        width: 90%;
+    }
+    .about-game .card{
+        height: fit-content;
+        padding: 0 15px;
     }
     .game-video h1{
         font-size: 1.5rem;
+    }
+    .game-video{
+        width: 100%;
+        padding: 10dvh 0 10dvh 0; 
+
+ 
     }
 }
 
 @media (max-width: 425px){
     body{
-        background-position: -600px -40px;
+        background-position: -800px;
         backdrop-filter: blur(1.2px);
     }
     .sections{
         padding-top: 12vh;
     }
-
-    .about-game {
-        padding-block: 8rem;
+    h3{
+        line-break: auto;
+        font-size: 1.5rem;
     }
-    
-    .about-game div {
-        height: 170px;
-        width: 300px;
+    .about-game{
+        width: 100%;
     }
-
     .about-game div p{
-        font-size: .8rem;
+        font-size: 0.77rem;
+        text-align: start;
     }
     .game-video h1{
         width: 80%;
@@ -182,8 +267,14 @@ body{
         justify-content: center;
         align-items: center;
     }
+    h3{
+        width: 23ch;
+    }
     .title {
         justify-content: center;
+    }
+    .game-video{
+        padding: 20px 0;
     }
     .game-video h1{
         width: 90%;
