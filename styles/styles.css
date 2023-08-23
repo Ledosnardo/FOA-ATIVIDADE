@@ -35,7 +35,6 @@ html{
 
 .title {
     color: var(--color-black);
-    font-weight:900;
     background-color: var(--color-white);
     width: fit-content;
     padding: 5px 20px 5px 20px;
@@ -226,7 +225,7 @@ h3{
         padding-top: 12vh;
     }
     h3{
-        line-break: auto;
+        width: 80%;
         font-size: 1.5rem;
     }
     .about-game{
@@ -236,8 +235,11 @@ h3{
         font-size: 0.77rem;
         text-align: start;
     }
+    .game-video{
+        padding: 0;
+    }
     .game-video h1{
-        width: 80%;
+        width: 70%;
         font-size: 1rem;
         text-align: center;
     }
@@ -268,7 +270,7 @@ h3{
         align-items: center;
     }
     h3{
-        width: 23ch;
+        width: fit-content;
     }
     .title {
         justify-content: center;
@@ -277,7 +279,7 @@ h3{
         padding: 20px 0;
     }
     .game-video h1{
-        width: 90%;
+        width: fit-content;
         font-size: large;
     }
 }
