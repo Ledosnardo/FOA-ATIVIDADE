@@ -72,6 +72,9 @@
 }
 
 @media (max-width: 425px){
+    img{
+        display: none;
+    }
     .game-presentation{
         height: 73vh;
         flex-direction: column;
@@ -88,12 +91,15 @@
     }
     .game-presentation h2{
         width: 150%;
-        line-height: 30px;
+        font-size: 2rem;
+        line-height: 33px;
+        text-align: center;
     }
     .game-presentation div p{
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         width: 150%;
+        font-size: 1rem;
         text-align: center;
     }
 }
