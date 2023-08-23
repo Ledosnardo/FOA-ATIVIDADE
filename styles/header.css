@@ -1,7 +1,7 @@
 @import './styles.css';
 
 .header{
-    position: fixed;
+    position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,19 +15,19 @@
 .header::before {
     content: "";
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.01);
+    background-color: rgba(255, 255, 255, 0.5);
     left: 0;
 
 }
 .header__blur{
     width: 100%;
-    height: 15vh;
+    height: 12vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     backdrop-filter: blur(4.2px);
-    -webkit-backdrop-filter: blur(4.2px);
+    background-color: rgba(0, 0, 0, 0.1);
     
 }
 .header > .header__blur ul{
@@ -48,13 +48,13 @@
 }
 .header > .header__blur > ul li:hover{
     outline-offset: 10px;
-    outline-color: rgba(255, 255, 255, 0.3);
+    outline-color: rgba(255, 255, 255, 0.7);
     transition: 0.4s outline-offset 0.1s, 0.3s outline-color 0.1s;
 }
 .header > .header__blur a{
     padding: 15px;
     text-decoration: none;
-    color: var(--color-whiteless);
+    color: var(--color-header);
     text-transform: uppercase;
     letter-spacing: 3px;
     transition: .2s;
@@ -62,7 +62,8 @@
 }
 
 .header > .header__blur a:hover{
-    opacity: 0.5;
+    opacity: 0.9;
+
 
 }
 
@@ -90,8 +91,6 @@
 }
 @media (max-width: 375px) {
     .header{
-        padding-left: 1
-        
-        0px;
+        padding-left: 10px;
     }
 }
