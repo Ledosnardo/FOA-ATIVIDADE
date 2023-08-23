@@ -271,6 +271,7 @@ h3{
     }
     h3{
         width: fit-content;
+        padding-inline: 10px;
     }
     .title {
         justify-content: center;
