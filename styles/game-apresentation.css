@@ -38,6 +38,13 @@
 }
 
 @media(max-width:1024px){
+    .game-presentation div{
+        padding: 0;
+    }
+
+    .game-presentation div{
+        padding-left: 3rem;
+    }
     .game-presentation {
         font-size: small;
     }
@@ -55,7 +62,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        padding-left: 0;
     }
     .game-presentation{
         margin-bottom: 20dvh;
@@ -108,5 +115,13 @@
     .game-presentation h2{
         font-size: larger;
         padding: 10px 30px 10px 30px;
+    }
+}
+
+@media (max-width: 375px){
+    .game-presentation div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

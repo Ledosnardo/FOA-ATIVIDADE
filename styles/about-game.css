@@ -1,0 +1,94 @@
+@import './styles.css';
+
+.about-game{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    padding: 10dvh;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    padding-inline: 4rem;
+    height: fit-content;
+}
+.about-game-cards{
+    width: 70%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;  
+    gap: 7%;
+    padding-bottom: 5dvh;
+}
+.about-game div:nth-child(2),
+.about-game div:nth-child(4){
+    flex-direction: row-reverse;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.card1-image,
+.card2-image,
+.card3-image{
+    width: 48%;
+    border-radius: 20px;
+    border: 3px solid var(--color-whiteless);
+    box-shadow: 14px 14px 14px 2px rgba(0,0,0,0.55);  
+}
+.about-game .card {
+    border: 2px solid var(--color-whiteless);
+    border-radius: 10px;
+    padding: 0px 15px 15px 15px;
+    box-shadow: 14px 14px 14px 2px rgba(0,0,0,0.55);   
+    background-color: rgb(255, 245, 238);
+}
+.about-game div h2{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+.about-game div p {
+    color: var(--color-blackless);
+    text-align: left;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+@media(max-width: 1024px) { 
+    .about-game div{
+        height: 200px;
+    }
+
+    .about-game div p {
+        font-size: .9rem;
+    }
+}
+
+@media(max-width: 768px){
+    .about-game {
+        height: fit-content;
+        padding: 5rem;
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px 0 100px 0;
+    }
+    .about-game-cards{
+        width: 90%;
+    }
+    .about-game .card{
+        height: fit-content;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 425px){ 
+    .about-game{
+        width: 100%;
+    }
+    .about-game div p{
+        font-size: 0.77rem;
+        text-align: start;
+    }
+}

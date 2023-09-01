@@ -1,0 +1,76 @@
+@import './styles.css';
+
+.game-video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8dvh;
+    background: url("/images/pcbs11-2.webp") no-repeat fixed center;
+    background-size: cover;
+    background-position: 0 150px;
+    height: 60dvh;
+    padding-inline: 4rem;
+    border-radius: 20px;
+}
+
+.game-video h1{
+    font-size: 2rem;
+}
+
+#video iframe {
+    height: 300px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.game-video a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+@media(max-width: 1024px) { 
+    .game-video {
+        padding: 3.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px){
+    .game-video h1{
+        font-size: 1.5rem;
+    }
+    .game-video{
+        width: 100%;
+        padding: 10dvh 0 10dvh 0; 
+    }
+}
+
+@media (max-width: 425px){ 
+    .game-video{
+        padding: 0;
+    }
+    .game-video h1{
+        width: 70%;
+        font-size: 1rem;
+        text-align: center;
+    }
+    #video iframe {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 375px){ 
+    .game-video{
+        padding: 20px 0;
+    }
+    .game-video h1{
+        width: fit-content;
+        font-size: large;
+    }
+}

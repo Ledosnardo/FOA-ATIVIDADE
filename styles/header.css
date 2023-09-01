@@ -1,7 +1,7 @@
 @import './styles.css';
 
 .header{
-    position: relative;
+    position: fixed;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,8 +63,6 @@
 
 .header > .header__blur a:hover{
     opacity: 0.9;
-
-
 }
 
 @media (max-width: 425px){

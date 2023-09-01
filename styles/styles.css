@@ -1,5 +1,8 @@
 @import './header.css';
 @import './game-apresentation.css';
+@import './about-game.css';
+@import './game-video.css';
+@import './footer.css';
 
 :root{
     --color-primary: #e85759;
@@ -25,6 +28,7 @@
 html{
     overflow-x: hidden;
 }
+
 .flex {
     display: flex;
 }
@@ -52,7 +56,7 @@ body{
 }
 
 .sections{
-    padding-top: 15vh;
+    padding: 15vh;
 }
 h3{
     font-size: 2rem;
@@ -70,112 +74,8 @@ h3{
     );    
     padding: 5px 15px;
 }
-.about-game{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-white);
-    padding: 10dvh;
-    justify-content: center;
-    align-items: center;
-    gap: 130px;
-    padding-inline: 4rem;
-    height: fit-content;
-}
-.about-game-cards{
-    width: 70%;
-    display: flex;
-    align-items: center; 
-    justify-content: center;  
-    gap: 7%;
-    padding-bottom: 5dvh;
-}
-.about-game div:nth-child(2),
-.about-game div:nth-child(4){
-    flex-direction: row-reverse;
-}
-.card{
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-}
-.card1-image,
-.card2-image,
-.card3-image{
-    width: 48%;
-    border-radius: 20px;
-    border: 3px solid var(--color-whiteless);
-    box-shadow: 14px 14px 14px 2px rgba(0,0,0,0.55);  
-}
-.about-game .card {
-    border: 2px solid var(--color-whiteless);
-    border-radius: 10px;
-    padding: 0px 15px 15px 15px;
-    box-shadow: 14px 14px 14px 2px rgba(0,0,0,0.55);   
-    background-color: rgb(255, 245, 238);
-}
-.about-game div h2{
-    text-align: center;
-    margin-bottom: 0;
-    font-size: 1.5rem;
-}
-.about-game div p {
-    color: var(--color-blackless);
-    text-align: left;
-    font-size: 1.3rem;
-    text-align: justify;
-}
 
-.game-video{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 8dvh;
-    background: url("/images/pcbs11-2.webp") no-repeat fixed center;
-    background-size: cover;
-    background-position: 0 150px;
-    height: 60dvh;
-    padding-inline: 4rem;
-}
-.game-video h1{
-    font-size: 2rem;
-}
 
-#video iframe {
-    height: 300px;
-    width: 500px;
-    border-radius: 5px;
-}
-
-.game-video a{
-    text-decoration: none;
-    color: #000;
-}
-
-@media(max-width: 1024px) {
-    .about-game div{
-        height: 200px;
-    }
-
-    .about-game div p {
-        font-size: .9rem;
-    }
-
-    .game-video {
-        padding: 3.2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .game-presentation div{
-        padding: 0;
-    }
-
-    .game-presentation div{
-        padding-left: 3rem;
-    }
-}
 
 @media(max-width: 768px){
     body{
@@ -187,32 +87,6 @@ h3{
         text-align: center;
         width: 25ch;
         line-height: 1.5em;
-    }
-    .game-presentation div{
-        padding-left: 0;
-    }
-    .about-game {
-        height: fit-content;
-        padding: 5rem;
-        flex-direction: column;
-        gap: 50px;
-        padding: 20px 0 100px 0;
-    }
-    .about-game-cards{
-        width: 90%;
-    }
-    .about-game .card{
-        height: fit-content;
-        padding: 0 15px;
-    }
-    .game-video h1{
-        font-size: 1.5rem;
-    }
-    .game-video{
-        width: 100%;
-        padding: 10dvh 0 10dvh 0; 
-
- 
     }
 }
 
@@ -228,25 +102,6 @@ h3{
         width: 80%;
         font-size: 1.5rem;
     }
-    .about-game{
-        width: 100%;
-    }
-    .about-game div p{
-        font-size: 0.77rem;
-        text-align: start;
-    }
-    .game-video{
-        padding: 0;
-    }
-    .game-video h1{
-        width: 70%;
-        font-size: 1rem;
-        text-align: center;
-    }
-    #video iframe {
-        width: 300px;
-        height: 200px;
-    }
 }
 
 @media (max-width: 375px){
@@ -255,11 +110,6 @@ h3{
         backdrop-filter: blur(1.2px);
     }
     .sections{
-        justify-content: center;
-        align-items: center;
-    }
-    .game-presentation div{
-        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -275,12 +125,5 @@ h3{
     }
     .title {
         justify-content: center;
-    }
-    .game-video{
-        padding: 20px 0;
-    }
-    .game-video h1{
-        width: fit-content;
-        font-size: large;
     }
 }
