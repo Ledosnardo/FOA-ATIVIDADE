@@ -58,3 +58,34 @@
 .footer__text a:hover{
     color: var(--color-white);
 }
+
+@media(max-width: 768px){
+    .footer__blur{
+        padding: 10px;
+    }
+}
+
+@media(max-width: 425px){
+    .footer__blur{
+        flex-direction: column;
+        height: auto;
+        align-items: start;
+    }
+
+    .footer__programmers{
+        width: 20%;
+    }
+
+    .footer__programmers{
+        margin-bottom: 10px ;
+    }
+
+    .footer__programmers a,.footer__text p{
+        font-size: .8rem;
+    }
+
+    .footer__text p, .footer__programmers ul{
+        border: none;
+        margin: 0;
+    }
+}
